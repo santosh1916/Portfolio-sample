@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html , body {
+    width: 100%;
+    height: 100%;
+    background-color: #D2C9D4;
+
+}
+/* #loder, #red{
+    display: none;
+} */
+button , a {
+    z-index: 999;
+}
+#circle{
+    pointer-events: none;
+    z-index: 9;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(89, 0, 255);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    filter: blur(3px);
+}
+#main{
+    position: relative;
+    width: 100%;
+}
+#loder{
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+}
+#loder .head{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    font-size: 8vw;
+}
+#loder .first-head{
+    top: 20vw;
+    left: 50%;
+}
+.second-head{
+    top: 30vw;
+    left: 60%;
+}
+.second-head span :nth-child(1){
+    font-family: "Rainbow Handmade";
+}
+#loder h1 #lastname{
+    color: #d87c7c;
+    font-family: "Rainbow Handmade";
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+#loder #l-heading{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+#l-heading h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+}
+#loder h1 span:nth-child(3){
+    font-family: "Rainbow Handmade";
+    font-weight: 300;
+}
+#loder h1 span:nth-child(4){
+    font-family: "Rainbow Handmade";
+    font-weight: 300;
+}
+.revel .parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.revel .parent .child{
+    display: block;
+}
+.child span{
+    display: inline-block ;
+}
+#red{
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #d87c7c;
+}
+#home{
+    width: 100%;
+}
+#nav{
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+.nav-cnt{
+    display: flex;
+    align-items: center
+}
+.nav-l{
+    gap: 20px;
+}
+.nav-l h1{
+    font-size: 3vw;
+    font-family: "Rainbow Handmade";
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #333;
+}
+.nav-l h1 i{
+    padding-bottom: 30px;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.nav-r{
+    gap: 50px;
+}
+.nav-r a{
+    z-index: 99;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+#home-cnt{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+#home-l{
+    width: 60%;
+    padding-left: 5vw;
+    margin-top: 3vw;
+}
+#home-l .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #2b2b2b;
+}
+#home-l .row h1{
+    font-size: 9vw;
+    font-weight: 500;
+}
+.row svg{
+    margin-right: 2vw;
+    height: 7vw;
+}
+path , polyline{
+    stroke: #825fc4;
+}
+/* ------------------------------------ */
+#home-l p{
+    margin-top: 2vw;
+    font-size: 2vw;
+}
+#home-l p span{
+    font-family: "Rainbow Handmade";
+    color: #825fc4;
+    font-weight: 700;
+}
+#home-l p span i{
+    font-size: 1vw;
+}
+#home-l button{
+    cursor: pointer;
+    margin-top: 3vw;
+    padding: 1vw 3vw;
+    font-size: 22px;
+    border-radius: 100px;
+    border: none;
+    background-color: #825fc4;
+    box-shadow: 1px 20px 40px 1px #825fc4;
+}
+#home-r{
+    width: 30%;
+}
+#home-r img{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    margin-top: 5vw;
+    width: 40%;
+}
+#first-page{
+    display: flex;
+    align-items: center;
+    margin-top: 15vw;
+    width: 100%;
+}
+.page1{
+    padding-bottom: 20vw;
+    width: 50%;
+    margin-left: 10vw;
+}
+.page1-l{
+    position: relative;
+    display: flex;
+}
+.page1-l .imgcnt{
+    z-index: 99;
+    position: absolute;
+    width: 27vw;
+    height: 80vh;
+    border-radius: 20px;
+}
+.page1-l :nth-child(1){
+    transform: translate(-10%,-20%) rotate(-3deg);
+    background-image: url(https://images.unsplash.com/photo-1682546937598-810c3f14cc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+    background-position: center;
+    background-size: cover;
+}
+.page1-l :nth-child(2){
+    transform: translate(20%, -10%) rotate(3deg);
+    background-image: url(https://images.unsplash.com/photo-1694939200168-1eab019da48d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+    background-position: center;
+    background-size: cover;
+}
+.page1-l :nth-child(3){
+    transform: translate(50% ,5%) rotate(10deg);
+    background-image: url(https://images.unsplash.com/photo-1654450556023-3d9feaf1ca73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+    background-size: cover;
+    background-position: center;
+
+}
+.page1-r h2{
+    padding-top: 10vw;
+    margin-left: 8vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+.page1-r h2 span{
+    color: #825fc4;
+    font-style: italic;
+}
+#second-page{
+    margin-top: 10vw;
+    padding-top: 10vw;
+    padding-right: 5vw;
+    width: 100%;
+    background-image: linear-gradient(180deg, #D2C9D4, #ffdede);
+}
+.project{
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 5vw;
+    width: 100%;
+}
+.project-cnt{
+    padding-left: 5vw;
+    width: 40%;
+}
+.project-cnt h1{
+    font-size: 3vw;
+}
+.project-cnt h1 span{
+    color: #825fc4;
+}
+.project-cnt p{
+    font-size: 1.5vw;
+    line-height: 1.3;
+    padding-bottom: 3vw;
+}
+.project-cnt button{
+    cursor: pointer;
+    padding: 1vw 3vw;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 100px;
+    border: none;
+    background-color: #825fc4;
+    box-shadow: 1px 20px 40px 1px #825fc4;
+}
+.project-img{
+    width: 40%;
+    border-radius: 20px;
+}
+.project-img img{
+    width: 100%;
+    border-radius: 20px;
+}
